@@ -24,7 +24,7 @@ class COMMON_CONFIG:
 ticker = COMMON_CONFIG.SYMBOL.replace('/', '')
 
 def get_data_from_api(symbol, timeframe, since):
-    exchange = ccxt.binance()
+    exchange = ccxt.bybit()
     since = exchange.parse8601(since)
     all_ohlcvs = []
 
