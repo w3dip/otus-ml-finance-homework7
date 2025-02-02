@@ -80,9 +80,12 @@ def sell():
     )
     print(r)
 
-def main():
+def make_order(buy_order = False):
     try:
-        sell()
+        if buy_order:
+            buy()
+        else:
+            sell()
     except exceptions.InvalidRequestError as e:
         print("ByBit API Request Error", e.status_code, e.message, sep=" | ")
     except exceptions.FailedRequestError as e:
@@ -90,5 +93,8 @@ def main():
     except Exception as e:
         print(e)
 
-if __name__ == '__main__':
-    main()
+# def main():
+#     make_order(True)
+#
+# if __name__ == '__main__':
+#     main()

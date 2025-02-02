@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  pipeline:
+    build: .
+    environment:
+      BB_API_KEY: "Place your api key here"
+      BB_SECRET_KEY: "Place your secret key here"

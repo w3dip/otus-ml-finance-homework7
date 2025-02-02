@@ -1,0 +1,12 @@
+"name"
+ARDRegression
+DummyRegressor
+"GaussianProcessRegressor"
+"Lars"
+"LinearSVR"
+MLPRegressor
+PoissonRegressor
+RidgeCV
+SGDRegressor
+"LarsCV"
+"PassiveAggressiveRegressor"
